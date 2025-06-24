@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestAssuredapiframwork]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="api.utilites.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Api Test(failed)" verbose="0">
+    <classes>
+      <class name="api.test.DDTests">
+        <methods>
+          <include name="testDeleteUserByName" invocation-numbers="0 2"/>
+        </methods>
+      </class> <!-- api.test.DDTests -->
+      <class name="api.test.UserTests">
+        <methods>
+          <include name="testDeleteByUserName"/>
+          <include name="setupData"/>
+          <include name="testUpdateUserByName"/>
+        </methods>
+      </class> <!-- api.test.UserTests -->
+      <class name="api.test.UserTests2">
+        <methods>
+          <include name="setupData"/>
+          <include name="testGetUserByName"/>
+          <include name="testUpdateUserByName"/>
+        </methods>
+      </class> <!-- api.test.UserTests2 -->
+    </classes>
+  </test> <!-- Api Test(failed) -->
+</suite> <!-- Failed suite [RestAssuredapiframwork] -->

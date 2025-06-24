@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="8" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-24T10:28:16 IST" name="RestAssuredapiframwork" finished-at="2025-06-24T10:28:41 IST" duration-ms="25200">
+    <groups>
+    </groups>
+    <test started-at="2025-06-24T10:28:16 IST" name="Api Test" finished-at="2025-06-24T10:28:41 IST" duration-ms="25200">
+      <class name="api.test.UserTests2">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.UserTests2@5e82df6a]" started-at="2025-06-24T10:28:37 IST" name="setupData" finished-at="2025-06-24T10:28:37 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="testPostUser()[pri:1, instance:api.test.UserTests2@5e82df6a]" started-at="2025-06-24T10:28:37 IST" name="testPostUser" finished-at="2025-06-24T10:28:38 IST" duration-ms="1456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testGetUserByName()[pri:2, instance:api.test.UserTests2@5e82df6a]" started-at="2025-06-24T10:28:38 IST" name="testGetUserByName" finished-at="2025-06-24T10:28:40 IST" duration-ms="1449" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at api.test.UserTests2.testGetUserByName(UserTests2.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserByName -->
+        <test-method signature="testUpdateUserByName()[pri:3, instance:api.test.UserTests2@5e82df6a]" started-at="2025-06-24T10:28:40 IST" name="testUpdateUserByName" finished-at="2025-06-24T10:28:40 IST" duration-ms="47" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: username.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: username.
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1277)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1161)
+at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy:180)
+at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy)
+at api.endpoints.UserEndPoints2.updateUser(UserEndPoints2.java:59)
+at api.test.UserTests2.testUpdateUserByName(UserTests2.java:65)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserByName -->
+        <test-method signature="testDeleteByUserName()[pri:4, instance:api.test.UserTests2@5e82df6a]" started-at="2025-06-24T10:28:40 IST" name="testDeleteByUserName" finished-at="2025-06-24T10:28:41 IST" duration-ms="1408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteByUserName -->
+      </class> <!-- api.test.UserTests2 -->
+      <class name="api.test.UserTests">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.UserTests@31d7b7bf]" started-at="2025-06-24T10:28:16 IST" name="setupData" finished-at="2025-06-24T10:28:18 IST" duration-ms="1378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="testPostUser()[pri:1, instance:api.test.UserTests@31d7b7bf]" started-at="2025-06-24T10:28:18 IST" name="testPostUser" finished-at="2025-06-24T10:28:23 IST" duration-ms="5135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testGetUserByName()[pri:2, instance:api.test.UserTests@31d7b7bf]" started-at="2025-06-24T10:28:23 IST" name="testGetUserByName" finished-at="2025-06-24T10:28:25 IST" duration-ms="1550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserByName -->
+        <test-method signature="testUpdateUserByName()[pri:3, instance:api.test.UserTests@31d7b7bf]" started-at="2025-06-24T10:28:25 IST" name="testUpdateUserByName" finished-at="2025-06-24T10:28:25 IST" duration-ms="65" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: username.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: username.
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1277)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1161)
+at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy:180)
+at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy)
+at api.endpoints.UserEndPoints.updateUser(UserEndPoints.java:46)
+at api.test.UserTests.testUpdateUserByName(UserTests.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserByName -->
+        <test-method signature="testDeleteByUserName()[pri:4, instance:api.test.UserTests@31d7b7bf]" started-at="2025-06-24T10:28:25 IST" name="testDeleteByUserName" finished-at="2025-06-24T10:28:26 IST" duration-ms="1392" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at api.test.UserTests.testDeleteByUserName(UserTests.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteByUserName -->
+      </class> <!-- api.test.UserTests -->
+      <class name="api.test.DDTests">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@7a69b07]" started-at="2025-06-24T10:28:28 IST" name="testPostUser" data-provider="Data" finished-at="2025-06-24T10:28:29 IST" duration-ms="1470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1010]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testusername1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Canedy]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[john@email.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[test@1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[8767675645]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@7a69b07]" started-at="2025-06-24T10:28:29 IST" name="testPostUser" data-provider="Data" finished-at="2025-06-24T10:28:31 IST" duration-ms="1453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1020]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testusername2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kim]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kom]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[kimkom@email.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[test@2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4567676756]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DDTests@7a69b07]" started-at="2025-06-24T10:28:31 IST" name="testPostUser" data-provider="Data" finished-at="2025-06-24T10:28:32 IST" duration-ms="1458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1030]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testusername3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Steve]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[smithsteve@email.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[test@3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[6767567878]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DDTests@7a69b07]" started-at="2025-06-24T10:28:33 IST" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-06-24T10:28:34 IST" duration-ms="1461" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testusername1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at api.test.DDTests.testDeleteUserByName(DDTests.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserByName -->
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DDTests@7a69b07]" started-at="2025-06-24T10:28:34 IST" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-06-24T10:28:35 IST" duration-ms="1404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testusername2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserByName -->
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DDTests@7a69b07]" started-at="2025-06-24T10:28:35 IST" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-06-24T10:28:37 IST" duration-ms="1381" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testusername3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at api.test.DDTests.testDeleteUserByName(DDTests.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserByName -->
+      </class> <!-- api.test.DDTests -->
+    </test> <!-- Api Test -->
+  </suite> <!-- RestAssuredapiframwork -->
+</testng-results>
