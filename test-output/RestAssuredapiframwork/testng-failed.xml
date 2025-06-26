@@ -8,17 +8,11 @@
     <classes>
       <class name="api.test.UserTests">
         <methods>
-          <include name="testDeleteByUserName"/>
           <include name="setupData"/>
           <include name="testGetUserByName"/>
           <include name="testUpdateUserByName"/>
         </methods>
       </class> <!-- api.test.UserTests -->
-      <class name="api.test.DDTests">
-        <methods>
-          <include name="testDeleteUserByName" invocation-numbers="0 1 2"/>
-        </methods>
-      </class> <!-- api.test.DDTests -->
       <class name="api.test.UserTests2">
         <methods>
           <include name="setupData"/>
